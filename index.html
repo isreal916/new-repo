@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<input type="text" id="num" placeholder="Enter Value..." readonly="">
+<button onclick="ATadd(0)">0</button>
+<button onclick="ATadd(1)">1</button>
+<button onclick="ATadd(2)">2</button>
+<button onclick="ATadd(3)">3</button>
+<button onclick="ATadd(4)">4</button>
+<button onclick="ATadd(5)">5</button>
+<button onclick="ATadd(6)">6</button>
+<button onclick="ATadd(7)">7</button>
+<button onclick="ATadd(8)">8</button>
+<button onclick="ATadd(9)">9</button>
+
+
+</div>
+<p id="dem"></p>
+<button onclick="fact()">factorial</button>
+
+<script>
+function ATadd(n){
+num.value+=n;}
+function fact(){
+var i, num, f;
+f = 1;
+var num = document.getElementById("num");
+for(i = 1; i <= parseInt(num.value); i++)  
+{
+f = f * i;
+}
+
+document.getElementById("dem").innerHTML =f;
+}
+</script>
+<?php
+$txt1 = "Learn PHP";
+$txt2 = "W3Schools.com";
+$x = 5;
+$y = 4;
+
+echo  $txt1 ;
+echo "Study PHP at " . $txt2 . "<br>";
+echo $x + $y;
+?>
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+enter n :<input type="text" id="fect">
+<button onmouseout="myfunc()" >button</button>
+<p style="width:230px;height:19px;border:1px solid black" id="demo"></p>
+<p style="width:230px;height:19px;border:1px solid black" id="ball"></p>
+<p style="width:230px;height:19px;border:1px solid black" id="dall"></p>
+<script>
+function myfunc(){
+var val = document.getElementById("fect").value;
+var x = val * 950;
+var y = val * 50;
+var z = x - y;
+document.getElementById("demo").innerHTML=x;
+document.getElementById("ball").innerHTML=y;
+document.getElementById("dall").innerHTML=z;}
+</script>
+
+
+
+
+
+
